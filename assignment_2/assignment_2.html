@@ -9,6 +9,91 @@
 </head>
 
 <body>
+    <div class="main">
+        <div class="content" data-theme="dark">
+            <div class="top-section">
+                <h3 id="modeText">Dark mode</h3>
+                <label class="switch">
+                    <input type="checkbox" checked onchange="switchTheme(this)">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="body-section">
+                <input class="search" type="text" placeholder="Search..." />
+                <div class="sub-section">
+                    <div class="sub-section1">
+                        <div class="section">
+                            <span class="b-square purple"></span>
+                            <div class="horizontal-line">
+                                <div class="line line1"></div>
+                                <div class="line line2"></div>
+                                <div class="line line3"></div>
+                                <div class="line line4"></div>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <span class="b-square yellow"></span>
+                            <div class="horizontal-line">
+                                <div class="line line1"></div>
+                                <div class="line line2"></div>
+                                <div class="line line3"></div>
+                                <div class="line line4"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vertical-line">
+                        <div class="v-line">
+                            <div class="vertical v1"></div>
+                        </div>
+                        <div class="v-line">
+                            <div class="vertical v2"></div>
+                        </div>
+                        <div class="v-line">
+                            <div class="vertical v3"></div>
+                        </div>
+                        <div class="v-line">
+                            <div class="vertical v4"></div>
+                        </div>
+                        <div class="v-line">
+                            <div class="vertical v5"></div>
+                        </div>
+                        <div class="v-line">
+                            <div class="vertical v6"></div>
+                        </div>
+                        <div class="v-line">
+                            <div class="vertical v7"></div>
+                        </div>
+                        <div class="v-line">
+                            <div class="vertical v8"></div>
+                        </div>
+                        <div class="v-line">
+                            <div class="vertical v9"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        function switchTheme() {
+            const card = document.querySelector(".content"); // your main card
+            const text = document.getElementById("modeText");
+
+            const currentTheme = card.getAttribute("data-theme");
+
+            const newTheme = currentTheme === "light" ? "dark" : "light";
+            card.setAttribute("data-theme", newTheme);
+
+            text.innerText = newTheme === "dark" ? "Dark mode" : "Light mode";
+
+            const checkbox = document.querySelector(".switch input");
+            checkbox.checked = newTheme === "dark";
+        }
+    </script>
 
 </body>
 
