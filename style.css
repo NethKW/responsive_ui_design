@@ -1,0 +1,38 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right top, #d29ff2, #b98fcc, #9f80a8, #847186, #676367);
+    text-align: center;
+}
+
+h2{
+    padding-top: 20px;
+}
+.assignment {
+    list-style: none;
+    padding: 0;
+}
+
+.assignment li {
+    margin: 20px 0;
+}
+
+.assignment a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #1a0e1a;
+    background: #504e5187;
+    padding: 12px 20px;
+    border-radius: 8px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.assignment a:hover {
+    background: #755a78;
+}
