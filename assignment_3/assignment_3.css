@@ -40,6 +40,10 @@ body {
     font-size: 28px;
 }
 
+.month h3{
+    font-size: 20px;
+}
+
 .calender-image {
     height: 40%;
     background: url("../assignment_3/calendar_image.png") no-repeat center/cover;
