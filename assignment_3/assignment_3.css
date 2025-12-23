@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: url("../assignment_3/calendar_image.png") no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    backdrop-filter: blur(8px);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calender {
+    width: 350px;
+    height: 550px;
+    border-radius: 16px;
+    overflow: hidden;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+.month {
+    padding: 20px;
+    color: #ffffff;
+}
+
+.month h2{
+    font-size: 28px;
+}
+
+.calender-image {
+    height: 40%;
+    background: url("../assignment_3/calendar_image.png") no-repeat center/cover;
+}
+
+.calender-body {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.week-days, .week {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.days {
+    display: flex;
+    flex-direction: column;
+}
+
+.week-days div,
+.week div {
+  width: 32px;
+  height: 32px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sunday{
+    color: red;
+}
+.current-date{
+    background-color: #009688;
+}
